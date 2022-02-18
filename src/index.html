@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/chat.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="initialize-room">
+
+        <button id="create">Host New Room</button>
+        <button id="join">Join Room</button>
+    </div>
+    <div id="main-chat">
+        <div id="chat-window">
+            <div id="messages"></div>
+            <div id="feedback"></div>
+        </div>
+        <input id="handle" type="text" placeholder="Handle" required/>
+        <input id="message" type="text" placeholder="Message" required/>
+        <button id="send">Send</button>
+    </div>
+</body>
+</html>
